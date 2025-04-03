@@ -113,7 +113,7 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <header className="relative bg-gradient-to-r from-png-red to-png-black text-white">
+      <header className="relative bg-[#221F26] text-white">
         <div className="container mx-auto px-4 py-16 md:py-24">
           <div className="max-w-3xl mx-auto text-center">
             <h1 className="text-4xl md:text-6xl font-norwester mb-6">Unlockim Fone PNG</h1>
