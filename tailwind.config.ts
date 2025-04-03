@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss";
 
 export default {
@@ -18,7 +19,13 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				'norwester': ['Norwester', 'sans-serif'],
+			},
 			colors: {
+				'png-red': 'hsl(var(--png-red))',
+				'png-black': 'hsl(var(--png-black))',
+				'png-gold': 'hsl(var(--png-gold))',
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',

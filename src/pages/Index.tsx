@@ -20,7 +20,7 @@ const Index = () => {
       description: "Professional screen replacement for all mobile devices.",
       icon: "📱",
       fullDescription: "Our expert technicians can replace broken screens on iPhones, Samsung, Google, and other major brands. We use only high-quality parts and offer a 90-day warranty on all repairs.",
-      price: "Starting at $49.99"
+      price: "Starting at K149.99"
     },
     {
       id: 2,
@@ -28,7 +28,7 @@ const Index = () => {
       description: "Restore your device's battery life with our replacement service.",
       icon: "🔋",
       fullDescription: "Battery losing charge too quickly? We can replace batteries for all major phone and tablet models, usually within 1 hour. All battery replacements come with a 6-month warranty.",
-      price: "Starting at $39.99"
+      price: "Starting at K129.99"
     },
     {
       id: 3,
@@ -36,7 +36,7 @@ const Index = () => {
       description: "Recover lost data from damaged or malfunctioning devices.",
       icon: "💾",
       fullDescription: "Our specialized data recovery service can help retrieve photos, messages, contacts and other important data from water-damaged, broken or non-functional devices. Success rate over 85%.",
-      price: "Starting at $79.99"
+      price: "Starting at K179.99"
     },
     {
       id: 4,
@@ -44,7 +44,7 @@ const Index = () => {
       description: "Speed up your device and improve performance.",
       icon: "⚡",
       fullDescription: "Is your device running slow? Our optimization service includes removing bloatware, clearing cache, updating software, and optimizing settings for better performance and battery life.",
-      price: "Starting at $29.99"
+      price: "Starting at K99.99"
     }
   ];
 
@@ -56,7 +56,7 @@ const Index = () => {
       description: "Complete protection against malware and viruses.",
       icon: "🔒",
       fullDescription: "Our premium antivirus solution provides real-time protection against malware, phishing attacks, and ransomware. Includes VPN service and identity protection features.",
-      price: "$24.99/year"
+      price: "K74.99/year"
     },
     {
       id: 2,
@@ -64,7 +64,7 @@ const Index = () => {
       description: "Automatic cloud backup for all your important data.",
       icon: "☁️",
       fullDescription: "Never lose important photos or documents again. Our cloud backup service automatically syncs your data to secure cloud storage, accessible from any device. Includes 500GB of storage.",
-      price: "$19.99/year"
+      price: "K59.99/year"
     },
     {
       id: 3,
@@ -72,7 +72,7 @@ const Index = () => {
       description: "Professional photo editing tools for mobile.",
       icon: "🖼️",
       fullDescription: "Transform your mobile photography with our professional-grade editing tools. Includes filters, effects, retouching tools, and advanced color correction features.",
-      price: "$14.99"
+      price: "K44.99"
     }
   ];
 
@@ -113,16 +113,16 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gray-50">
       {/* Hero Section */}
-      <header className="relative bg-gradient-to-r from-blue-600 to-indigo-700 text-white">
+      <header className="relative bg-gradient-to-r from-png-red to-png-black text-white">
         <div className="container mx-auto px-4 py-16 md:py-24">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-6xl font-bold mb-6">Mobile TechCare</h1>
-            <p className="text-xl md:text-2xl mb-8">Expert repair services for all your mobile devices</p>
+            <h1 className="text-4xl md:text-6xl font-norwester mb-6">Unlockim Fone PNG</h1>
+            <p className="text-xl md:text-2xl mb-8">Expert repair services for all your mobile devices in Papua New Guinea</p>
             <div className="flex flex-wrap justify-center gap-4">
               <Button 
                 onClick={() => scrollToSection('services')}
                 size="lg" 
-                className="bg-white text-blue-700 hover:bg-blue-50"
+                className="bg-png-gold text-png-black hover:bg-png-gold/90 font-medium"
               >
                 Our Services
               </Button>
@@ -142,12 +142,12 @@ const Index = () => {
         <nav className="bg-white text-gray-800 shadow-md sticky top-0 z-10">
           <div className="container mx-auto px-4">
             <div className="flex justify-between items-center py-4">
-              <div className="text-xl font-bold">Mobile TechCare</div>
+              <div className="text-xl font-norwester text-png-red">Unlockim Fone PNG</div>
               <div className="hidden md:flex space-x-8">
-                <button onClick={() => scrollToSection('services')} className="hover:text-blue-600">Services</button>
-                <button onClick={() => scrollToSection('about')} className="hover:text-blue-600">About Us</button>
-                <button onClick={() => scrollToSection('shop')} className="hover:text-blue-600">Shop</button>
-                <button onClick={() => scrollToSection('contact')} className="hover:text-blue-600">Contact</button>
+                <button onClick={() => scrollToSection('services')} className="hover:text-png-red">Services</button>
+                <button onClick={() => scrollToSection('about')} className="hover:text-png-red">About Us</button>
+                <button onClick={() => scrollToSection('shop')} className="hover:text-png-red">Shop</button>
+                <button onClick={() => scrollToSection('contact')} className="hover:text-png-red">Contact</button>
               </div>
               <div className="md:hidden">
                 {/* Mobile menu button would go here */}
@@ -161,10 +161,10 @@ const Index = () => {
       {/* Services Section */}
       <section id="services" className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Our Services</h2>
+          <h2 className="text-3xl md:text-4xl font-norwester text-center mb-12 text-png-red">Our Services</h2>
           
           <div className="flex items-center justify-center gap-4 mb-12">
-            <Button variant="outline" size="icon" onClick={showPrevService} aria-label="Previous service">
+            <Button variant="outline" size="icon" onClick={showPrevService} aria-label="Previous service" className="border-png-black text-png-black">
               <ArrowLeft className="h-5 w-5" />
             </Button>
             
@@ -176,11 +176,11 @@ const Index = () => {
               ].map((index, i) => (
                 <Card 
                   key={services[index].id} 
-                  className={`transform transition-all duration-300 ${i === 1 ? 'scale-105 shadow-lg' : 'scale-95 opacity-70'}`}
+                  className={`transform transition-all duration-300 ${i === 1 ? 'scale-105 shadow-lg border-png-red' : 'scale-95 opacity-70'}`}
                 >
                   <CardHeader>
                     <div className="text-4xl mb-2 text-center">{services[index].icon}</div>
-                    <CardTitle>{services[index].title}</CardTitle>
+                    <CardTitle className="font-norwester">{services[index].title}</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <CardDescription>{services[index].description}</CardDescription>
@@ -188,7 +188,7 @@ const Index = () => {
                   <CardFooter>
                     <Button 
                       variant="outline" 
-                      className="w-full"
+                      className="w-full border-png-red text-png-red hover:bg-png-red hover:text-white"
                       onClick={() => setSelectedService(services[index])}
                     >
                       Learn More
@@ -198,14 +198,14 @@ const Index = () => {
               ))}
             </div>
             
-            <Button variant="outline" size="icon" onClick={showNextService} aria-label="Next service">
+            <Button variant="outline" size="icon" onClick={showNextService} aria-label="Next service" className="border-png-black text-png-black">
               <ArrowRight className="h-5 w-5" />
             </Button>
           </div>
 
           <div className="text-center">
             <p className="text-gray-600 mb-6">We offer a wide range of repair services for all major brands</p>
-            <Button onClick={() => scrollToSection('contact')}>Book a Repair</Button>
+            <Button onClick={() => scrollToSection('contact')} className="bg-png-red hover:bg-png-red/90">Book a Repair</Button>
           </div>
         </div>
       </section>
@@ -214,35 +214,35 @@ const Index = () => {
       <section id="about" className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">About Us</h2>
+            <h2 className="text-3xl md:text-4xl font-norwester text-center mb-12 text-png-red">About Us</h2>
             
             <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
               <div>
-                <h3 className="text-2xl font-semibold mb-4">Your Trusted Repair Experts</h3>
+                <h3 className="text-2xl font-norwester mb-4 text-png-black">Your Trusted Repair Experts in PNG</h3>
                 <p className="text-gray-700 mb-4">
-                  Mobile TechCare has been providing expert repair services since 2010. Our certified technicians have the knowledge and experience to fix any issue with your mobile devices.
+                  Unlockim Fone PNG has been providing expert repair services since 2010. Our certified technicians have the knowledge and experience to fix any issue with your mobile devices.
                 </p>
                 <p className="text-gray-700 mb-4">
                   We pride ourselves on fast, reliable service and customer satisfaction. All repairs come with a warranty, and we use only high-quality replacement parts.
                 </p>
                 <ul className="space-y-2 text-gray-700">
                   <li className="flex items-center">
-                    <span className="mr-2 text-green-500">✓</span> Certified technicians
+                    <span className="mr-2 text-png-red">✓</span> Certified technicians
                   </li>
                   <li className="flex items-center">
-                    <span className="mr-2 text-green-500">✓</span> Quality replacement parts
+                    <span className="mr-2 text-png-red">✓</span> Quality replacement parts
                   </li>
                   <li className="flex items-center">
-                    <span className="mr-2 text-green-500">✓</span> Fast turnaround times
+                    <span className="mr-2 text-png-red">✓</span> Fast turnaround times
                   </li>
                   <li className="flex items-center">
-                    <span className="mr-2 text-green-500">✓</span> Warranty on all repairs
+                    <span className="mr-2 text-png-red">✓</span> Warranty on all repairs
                   </li>
                 </ul>
               </div>
               <div className="rounded-lg overflow-hidden shadow-xl">
                 <AspectRatio ratio={4/3}>
-                  <div className="bg-blue-100 w-full h-full flex items-center justify-center">
+                  <div className="bg-gradient-to-br from-png-red to-png-black w-full h-full flex items-center justify-center">
                     <span className="text-6xl">🔧👨‍💻</span>
                   </div>
                 </AspectRatio>
@@ -250,8 +250,8 @@ const Index = () => {
             </div>
             
             <div className="text-center">
-              <p className="text-gray-600 mb-6">Thousands of satisfied customers trust us with their devices</p>
-              <Button variant="outline" onClick={() => scrollToSection('contact')}>Get in Touch</Button>
+              <p className="text-gray-600 mb-6">Thousands of satisfied customers across Papua New Guinea trust us with their devices</p>
+              <Button variant="outline" onClick={() => scrollToSection('contact')} className="border-png-red text-png-red hover:bg-png-red hover:text-white">Get in Touch</Button>
             </div>
           </div>
         </div>
@@ -260,10 +260,10 @@ const Index = () => {
       {/* Shop Section */}
       <section id="shop" className="py-16 bg-white">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Software Shop</h2>
+          <h2 className="text-3xl md:text-4xl font-norwester text-center mb-12 text-png-red">Software Shop</h2>
           
           <div className="flex items-center justify-center gap-4 mb-12">
-            <Button variant="outline" size="icon" onClick={showPrevLicense} aria-label="Previous license">
+            <Button variant="outline" size="icon" onClick={showPrevLicense} aria-label="Previous license" className="border-png-black text-png-black">
               <ArrowLeft className="h-5 w-5" />
             </Button>
             
@@ -275,12 +275,12 @@ const Index = () => {
               ].map((index, i) => (
                 <Card 
                   key={licenses[index].id} 
-                  className={`transform transition-all duration-300 ${i === 1 ? 'scale-105 shadow-lg' : 'scale-95 opacity-70'}`}
+                  className={`transform transition-all duration-300 ${i === 1 ? 'scale-105 shadow-lg border-png-red' : 'scale-95 opacity-70'}`}
                 >
                   <CardHeader>
                     <div className="text-4xl mb-2 text-center">{licenses[index].icon}</div>
-                    <CardTitle>{licenses[index].title}</CardTitle>
-                    <CardDescription className="font-bold text-blue-600">{licenses[index].price}</CardDescription>
+                    <CardTitle className="font-norwester">{licenses[index].title}</CardTitle>
+                    <CardDescription className="font-bold text-png-red">{licenses[index].price}</CardDescription>
                   </CardHeader>
                   <CardContent>
                     <CardDescription>{licenses[index].description}</CardDescription>
@@ -289,16 +289,17 @@ const Index = () => {
                     <Button 
                       variant="outline"
                       onClick={() => setSelectedLicense(licenses[index])}
+                      className="border-png-red text-png-red hover:bg-png-red hover:text-white"
                     >
                       Details
                     </Button>
-                    <Button>Add to Cart</Button>
+                    <Button className="bg-png-gold text-png-black hover:bg-png-gold/90">Add to Cart</Button>
                   </CardFooter>
                 </Card>
               ))}
             </div>
             
-            <Button variant="outline" size="icon" onClick={showNextLicense} aria-label="Next license">
+            <Button variant="outline" size="icon" onClick={showNextLicense} aria-label="Next license" className="border-png-black text-png-black">
               <ArrowRight className="h-5 w-5" />
             </Button>
           </div>
@@ -312,42 +313,42 @@ const Index = () => {
       {/* Contact Section */}
       <section id="contact" className="py-16 bg-gray-50">
         <div className="container mx-auto px-4">
-          <h2 className="text-3xl md:text-4xl font-bold text-center mb-12">Contact Us</h2>
+          <h2 className="text-3xl md:text-4xl font-norwester text-center mb-12 text-png-red">Contact Us</h2>
           
           <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
             <div>
-              <h3 className="text-xl font-semibold mb-4">Get in Touch</h3>
+              <h3 className="text-xl font-norwester mb-4 text-png-black">Get in Touch</h3>
               <p className="text-gray-700 mb-6">
                 Have questions or need to book a repair? Contact us and we'll get back to you as soon as possible.
               </p>
               
               <div className="space-y-4">
                 <div className="flex items-start">
-                  <Phone className="h-5 w-5 mr-3 text-blue-600 mt-1" />
+                  <Phone className="h-5 w-5 mr-3 text-png-red mt-1" />
                   <div>
                     <h4 className="font-medium">Phone</h4>
-                    <p className="text-gray-600">(555) 123-4567</p>
+                    <p className="text-gray-600">(675) 123-4567</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
-                  <Mail className="h-5 w-5 mr-3 text-blue-600 mt-1" />
+                  <Mail className="h-5 w-5 mr-3 text-png-red mt-1" />
                   <div>
                     <h4 className="font-medium">Email</h4>
-                    <p className="text-gray-600">info@mobiletechcare.com</p>
+                    <p className="text-gray-600">info@unlockimfonepng.com</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
-                  <MapPin className="h-5 w-5 mr-3 text-blue-600 mt-1" />
+                  <MapPin className="h-5 w-5 mr-3 text-png-red mt-1" />
                   <div>
                     <h4 className="font-medium">Address</h4>
-                    <p className="text-gray-600">123 Repair Street, Tech City, TC 12345</p>
+                    <p className="text-gray-600">123 Waigani Drive, Port Moresby, Papua New Guinea</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start">
-                  <Clock className="h-5 w-5 mr-3 text-blue-600 mt-1" />
+                  <Clock className="h-5 w-5 mr-3 text-png-red mt-1" />
                   <div>
                     <h4 className="font-medium">Hours</h4>
                     <p className="text-gray-600">Monday-Friday: 9am-6pm</p>
@@ -359,14 +360,14 @@ const Index = () => {
             </div>
             
             <div className="bg-white p-6 rounded-lg shadow-md">
-              <h3 className="text-xl font-semibold mb-4">Send a Message</h3>
+              <h3 className="text-xl font-norwester mb-4 text-png-black">Send a Message</h3>
               <form className="space-y-4">
                 <div>
                   <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">Name</label>
                   <input
                     id="name"
                     type="text"
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-png-red"
                     placeholder="Your name"
                   />
                 </div>
@@ -376,7 +377,7 @@ const Index = () => {
                   <input
                     id="email"
                     type="email"
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-png-red"
                     placeholder="Your email"
                   />
                 </div>
@@ -386,12 +387,12 @@ const Index = () => {
                   <textarea
                     id="message"
                     rows={4}
-                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-png-red"
                     placeholder="Your message"
                   ></textarea>
                 </div>
                 
-                <Button className="w-full">Send Message</Button>
+                <Button className="w-full bg-png-red hover:bg-png-red/90">Send Message</Button>
               </form>
             </div>
           </div>
@@ -399,26 +400,26 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="bg-gray-900 text-white py-12">
+      <footer className="bg-png-black text-white py-12">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-4 gap-8">
             <div>
-              <h3 className="text-xl font-bold mb-4">Mobile TechCare</h3>
-              <p className="text-gray-400">Your trusted repair experts since 2010</p>
+              <h3 className="text-xl font-norwester mb-4 text-png-gold">Unlockim Fone PNG</h3>
+              <p className="text-gray-400">Your trusted repair experts in Papua New Guinea since 2010</p>
             </div>
             
             <div>
-              <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
+              <h4 className="text-lg font-norwester mb-4 text-png-gold">Quick Links</h4>
               <ul className="space-y-2">
-                <li><button onClick={() => scrollToSection('services')} className="text-gray-400 hover:text-white">Services</button></li>
-                <li><button onClick={() => scrollToSection('about')} className="text-gray-400 hover:text-white">About Us</button></li>
-                <li><button onClick={() => scrollToSection('shop')} className="text-gray-400 hover:text-white">Shop</button></li>
-                <li><button onClick={() => scrollToSection('contact')} className="text-gray-400 hover:text-white">Contact</button></li>
+                <li><button onClick={() => scrollToSection('services')} className="text-gray-400 hover:text-png-gold">Services</button></li>
+                <li><button onClick={() => scrollToSection('about')} className="text-gray-400 hover:text-png-gold">About Us</button></li>
+                <li><button onClick={() => scrollToSection('shop')} className="text-gray-400 hover:text-png-gold">Shop</button></li>
+                <li><button onClick={() => scrollToSection('contact')} className="text-gray-400 hover:text-png-gold">Contact</button></li>
               </ul>
             </div>
             
             <div>
-              <h4 className="text-lg font-semibold mb-4">Services</h4>
+              <h4 className="text-lg font-norwester mb-4 text-png-gold">Services</h4>
               <ul className="space-y-2">
                 <li><span className="text-gray-400">Screen Repair</span></li>
                 <li><span className="text-gray-400">Battery Replacement</span></li>
@@ -428,17 +429,17 @@ const Index = () => {
             </div>
             
             <div>
-              <h4 className="text-lg font-semibold mb-4">Connect With Us</h4>
+              <h4 className="text-lg font-norwester mb-4 text-png-gold">Connect With Us</h4>
               <div className="flex space-x-4">
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="#" className="text-gray-400 hover:text-png-gold">
                   <span className="sr-only">Facebook</span>
                   📱
                 </a>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="#" className="text-gray-400 hover:text-png-gold">
                   <span className="sr-only">Twitter</span>
                   💻
                 </a>
-                <a href="#" className="text-gray-400 hover:text-white">
+                <a href="#" className="text-gray-400 hover:text-png-gold">
                   <span className="sr-only">Instagram</span>
                   📞
                 </a>
@@ -447,7 +448,7 @@ const Index = () => {
           </div>
           
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; {new Date().getFullYear()} Mobile TechCare. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} Unlockim Fone PNG. All rights reserved.</p>
           </div>
         </div>
       </footer>
@@ -460,16 +461,16 @@ const Index = () => {
         {selectedService && (
           <DialogContent className="sm:max-w-md">
             <DialogHeader>
-              <DialogTitle>{selectedService.title}</DialogTitle>
+              <DialogTitle className="font-norwester text-png-red">{selectedService.title}</DialogTitle>
               <DialogDescription>
                 <div className="mt-4 space-y-3">
                   <p>{selectedService.fullDescription}</p>
-                  <p className="font-semibold text-blue-600">{selectedService.price}</p>
+                  <p className="font-semibold text-png-red">{selectedService.price}</p>
                 </div>
               </DialogDescription>
             </DialogHeader>
             <div className="flex justify-end">
-              <Button onClick={() => scrollToSection('contact')}>Book Now</Button>
+              <Button onClick={() => scrollToSection('contact')} className="bg-png-red hover:bg-png-red/90">Book Now</Button>
             </div>
           </DialogContent>
         )}
@@ -483,19 +484,19 @@ const Index = () => {
         {selectedLicense && (
           <DialogContent className="sm:max-w-md">
             <DialogHeader>
-              <DialogTitle>{selectedLicense.title}</DialogTitle>
+              <DialogTitle className="font-norwester text-png-red">{selectedLicense.title}</DialogTitle>
               <DialogDescription>
                 <div className="mt-4 space-y-3">
                   <p>{selectedLicense.fullDescription}</p>
-                  <p className="font-semibold text-blue-600">{selectedLicense.price}</p>
+                  <p className="font-semibold text-png-red">{selectedLicense.price}</p>
                 </div>
               </DialogDescription>
             </DialogHeader>
             <div className="flex justify-end gap-3">
-              <Button variant="outline" onClick={() => setSelectedLicense(null)}>
+              <Button variant="outline" onClick={() => setSelectedLicense(null)} className="border-png-red text-png-red hover:bg-png-red hover:text-white">
                 Cancel
               </Button>
-              <Button>Add to Cart</Button>
+              <Button className="bg-png-gold text-png-black hover:bg-png-gold/90">Add to Cart</Button>
             </div>
           </DialogContent>
         )}
